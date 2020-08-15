@@ -1,0 +1,2 @@
+class TVDBSearch(apiKey: String) {
+}

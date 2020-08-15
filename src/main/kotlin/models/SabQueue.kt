@@ -1,0 +1,72 @@
+package models
+
+data class SabQueue (
+        val queue : Queue
+)
+
+data class Queue (
+        val version : String?,
+        val paused : Boolean?,
+        val pause_int : String?,
+        val paused_all : Boolean?,
+        val diskspace1 : String?,
+        val diskspace2 : String?,
+        val diskspace1_norm : String?,
+        val diskspace2_norm : String?,
+        val diskspacetotal1 : String?,
+        val diskspacetotal2 : String?,
+        val loadavg : String?,
+        val speedlimit : String?,
+        val speedlimit_abs : String?,
+        val have_warnings : String?,
+        val finishaction : String?,
+        val quota : String?,
+        val have_quota : Boolean?,
+        val left_quota : String?,
+        val cache_art : String?,
+        val cache_size : String?,
+        val cache_max : String?,
+        val kbpersec : String?,
+        val speed : String?,
+        val mbleft : String?,
+        val mb : String?,
+        val sizeleft : String?,
+        val size : String?,
+        val noofslots_total : Int?,
+        val status : String?,
+        val timeleft : String?,
+        val eta : String?,
+        val refresh_rate : String?,
+        val scripts : List<String>?,
+        val categories : List<String>?,
+        val rating_enable : Boolean?,
+        val noofslots : Int?,
+        val start : Int?,
+        val limit : Int?,
+        val finish : Int?,
+        val slots : List<Slots>?
+)
+
+data class Slots (
+        val index : Int?,
+        val nzo_id : String?,
+        val unpackopts : String?,
+        val priority : String?,
+        val script : String?,
+        val filename : String?,
+        val labels : List<String>?,
+        val password : String?,
+        val cat : String?,
+        val mbleft : String?,
+        val mb : String?,
+        val size : String?,
+        val sizeleft : String?,
+        val percentage : String?,
+        val mbmissing : String?,
+        val direct_unpack : Int?,
+        val status : String?,
+        val timeleft : String?,
+        val eta : String?,
+        val avg_age : String?,
+        val has_rating : Boolean?
+)
